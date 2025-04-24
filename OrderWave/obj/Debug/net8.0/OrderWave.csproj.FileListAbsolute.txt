@@ -1,0 +1,14 @@
+D:\Visual studio\OrderWave\OrderWave\bin\Debug\net8.0\OrderWave.deps.json
+D:\Visual studio\OrderWave\OrderWave\bin\Debug\net8.0\OrderWave.dll
+D:\Visual studio\OrderWave\OrderWave\bin\Debug\net8.0\OrderWave.pdb
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\OrderWave.csproj.AssemblyReference.cache
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\Avalonia\resources
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\OrderWave.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\OrderWave.AssemblyInfoInputs.cache
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\OrderWave.AssemblyInfo.cs
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\OrderWave.csproj.CoreCompileInputs.cache
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\Avalonia\OrderWave.dll
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\Avalonia\OrderWave.pdb
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\refint\Avalonia\OrderWave.dll
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\ref\OrderWave.dll

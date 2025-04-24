@@ -1,0 +1,38 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = OrderWave
+build_property.ProjectDir = D:\Visual studio\OrderWave\OrderWave\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/Visual studio/OrderWave/OrderWave/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Visual studio/OrderWave/OrderWave/Page1.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Visual studio/OrderWave/OrderWave/Page2.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Visual studio/OrderWave/OrderWave/Page3.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Visual studio/OrderWave/OrderWave/Views/MainView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Visual studio/OrderWave/OrderWave/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

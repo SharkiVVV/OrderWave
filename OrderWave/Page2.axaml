@@ -1,0 +1,74 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             Background="RoyalBlue"
+             x:Class="OrderWave.Page2">
+
+	<!-- Оборачиваем всё содержимое в ScrollViewer -->
+	<ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+		<StackPanel>
+
+			<TextBlock Text="Page 2" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+				<Button Content="Go to Page 1" Click="OnNavigateButtonClick" Margin="0,0,200,0"/>
+				<Button Content="Go to Page 3" Click="OnNavigateButton2Click" Margin="0,0,0,0" HorizontalAlignment="Right"/>
+			</StackPanel>
+
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="40">
+
+				<StackPanel Width="300" Spacing="10">
+					<TextBlock Text="Waiters" FontWeight="Bold"/>
+					<DataGrid ItemsSource="{Binding Waiters}"
+                              Background="Bisque"
+                              AutoGenerateColumns="True"
+                              GridLinesVisibility="All"
+                              BorderThickness="1"
+                              BorderBrush="Gray"
+                              MaxHeight="150"/>
+
+					<TextBox x:Name="TBW" Watermark="New waiter name"/>
+					<Button Content="Add new waiter" Click="AddNewWButtonClick"/>
+				</StackPanel>
+
+				<StackPanel Width="300" Spacing="10">
+					<TextBlock Text="Customers" FontWeight="Bold"/>
+					<DataGrid ItemsSource="{Binding Customers}"
+                              AutoGenerateColumns="True"
+                              GridLinesVisibility="All"
+                              BorderThickness="1"
+                              BorderBrush="Gray"
+                              MaxHeight="350"/>
+
+					<TextBox x:Name="TBC" Watermark="New customer name"/>
+					<TextBox x:Name="TBCG" Watermark="Customer gender"/>
+					<Button Content="Add new customer" Click="AddNewCButtonClick"/>
+				</StackPanel>
+
+				<StackPanel Width="300" Spacing="10">
+					<TextBlock Text="Tables" FontWeight="Bold"/>
+					<DataGrid ItemsSource="{Binding Tables}"
+                              AutoGenerateColumns="True"
+                              GridLinesVisibility="All"
+                              BorderThickness="1"
+                              BorderBrush="Gray"
+                              MaxHeight="150"/>
+				</StackPanel>
+
+			</StackPanel>
+
+
+			<StackPanel>
+				<TextBox x:Name="TBWID" Watermark="Add waiters ID " Width="300"/>
+				<TextBox x:Name="TBCID" Watermark="Add customer ID " Width="300"/>
+				<TextBox x:Name="TBTID" Watermark="Add table ID " Width="300"/>
+			</StackPanel>
+
+			<Button Content="Add new custom,waiter and table to ordrer" Click="AddNewCustomButtonClick" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+
+		</StackPanel>
+	</ScrollViewer>
+</UserControl>
