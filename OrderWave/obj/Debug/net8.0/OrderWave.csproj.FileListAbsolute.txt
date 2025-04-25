@@ -12,3 +12,4 @@ D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\Avalonia\OrderWave.dll
 D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\Avalonia\OrderWave.pdb
 D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\refint\Avalonia\OrderWave.dll
 D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\ref\OrderWave.dll
+D:\Visual studio\OrderWave\OrderWave\obj\Debug\net8.0\OrderWave.sourcelink.json
