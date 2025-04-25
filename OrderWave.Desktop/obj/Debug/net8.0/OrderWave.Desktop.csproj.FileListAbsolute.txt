@@ -115,4 +115,3 @@ D:\Visual studio\OrderWave\OrderWave.Desktop\bin\Debug\net8.0\runtimes\win-x86\n
 D:\Visual studio\OrderWave\OrderWave.Desktop\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 D:\Visual studio\OrderWave\OrderWave.Desktop\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 D:\Visual studio\OrderWave\OrderWave.Desktop\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Visual studio\OrderWave\OrderWave.Desktop\obj\Debug\net8.0\OrderWave.Desktop.sourcelink.json
