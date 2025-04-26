@@ -40,6 +40,10 @@ public partial class Page1 : UserControl
             Buttton.IsEnabled = true;
             
         }
+        else
+        {
+            Buttton.IsEnabled = false;
+        }
 
     }
 
