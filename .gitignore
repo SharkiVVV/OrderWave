@@ -3,6 +3,43 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Сборочные артефакты
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+
+# Временные файлы Visual Studio
+*.csproj.user
+*.sln
+*.suo
+*.cache
+*.vs/
+*.vscode/
+*.idea/
+
+# NuGet пакеты
+packages/
+*.nupkg
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Файлы конфигурации с чувствительными данными
+*.config
+appsettings.json
+*.secret
+
+# ОС и редакторские файлы
+.DS_Store
+Thumbs.db
+
+# Игнорировать всё в bin и obj, но включить нужные файлы, если есть
+!bin/Release/
+!obj/Release/
+
 # User-specific files
 *.rsuser
 *.suo
