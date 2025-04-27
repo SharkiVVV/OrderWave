@@ -131,7 +131,40 @@ public class SqlServerDataService
 
 
 
+    public List<Menus> GetMenus()
+    {
+        var menu = new List<Menus>();
+
+
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            connection.Open();
+
+            var command = new SqlCommand("SELECT ID,DISH_NAME FROM MENU", connection);
+            using (var reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    menu.Add(new Menus(
+                        reader.GetInt32(0),
+                        reader.GetString(1)
+
+                    ));
+                }
+            }
+        }
+
+
+
+        return menu;
+    }
+
+
+
 }
+
+
+
 
 
 

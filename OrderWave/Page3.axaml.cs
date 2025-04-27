@@ -19,6 +19,7 @@ public partial class Page3 : UserControl
 {
     private readonly MainWindow _mainWindow;
     public ObservableCollection<Orders> Orders { get; }
+    public ObservableCollection<Menus> Menus { get; }
     public readonly string _connectionString = "Data Source=DESKTOP-IA8RHKR;Initial Catalog=OrderWave;Integrated Security=True;Encrypt=False";
     public Page3(MainWindow mainWindow)
     {
@@ -28,6 +29,8 @@ public partial class Page3 : UserControl
         var dataService = new SqlServerDataService();
 
         Orders = new ObservableCollection<Orders>(dataService.GetOrders());
+
+        Menus = new ObservableCollection<Menus>(dataService.GetMenus());
 
         DataContext = this;
     }

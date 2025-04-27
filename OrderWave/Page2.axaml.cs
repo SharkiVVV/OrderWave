@@ -111,6 +111,39 @@ public partial class Page2 : UserControl
         }
     }
 
+    private void AddNewTButtonClick(object sender, RoutedEventArgs e)
+    {
+    
+
+        if (!int.TryParse(TBT.Text, out int tableNumber))
+        {
+            System.Diagnostics.Debug.WriteLine("ID официанта, заказчика или стола невалиден!");
+            return;
+        }
+
+
+
+       
+
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            connection.Open();
+
+            var command = new SqlCommand("INSERT INTO  RESTAURANT_TABLE(TABLE_NUMBER) VALUES (@TableNumber)", connection);
+            command.Parameters.AddWithValue("@TableNumber", tableNumber);
+
+            int rowsAffected = command.ExecuteNonQuery();
+
+            // ? Добавляем в привязанную коллекцию
+            if (rowsAffected > 0)
+            {
+                Tables.Add(new Table { TableNumber = tableNumber });
+                TBT.Text = "";
+            }
+        }
+
+    }
+
 
     private void AddNewCustomButtonClick(object sender, RoutedEventArgs e)
     {

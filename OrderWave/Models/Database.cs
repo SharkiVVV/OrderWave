@@ -70,3 +70,20 @@ public class Orders
 
     public Orders() { }
 }
+
+public class Menus
+{
+    public int Id { get; set; }
+    public string DishName { get; set; }
+
+
+
+    public Menus(int id, string dishname)
+    {
+        Id = id;
+        DishName = dishname;
+
+    }
+
+    public Menus() { }
+}

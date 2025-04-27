@@ -56,6 +56,9 @@
                               BorderThickness="1"
                               BorderBrush="Gray"
                               MaxHeight="150"/>
+
+					<TextBox x:Name="TBT" Watermark="New table "/>
+					<Button Content="Add new table" Click="AddNewTButtonClick"/>
 				</StackPanel>
 
 			</StackPanel>
