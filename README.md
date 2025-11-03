@@ -1,5 +1,4 @@
 # OrderWave
-OrderWave- это система для учета заказов в ресторане и другое (Restaurant Order Management System)
-Я в процессе создания и работы над приложением. Использую Avalonia UI.
-login - Mart
-password- 1234
+OrderWave is a system for order accounting in a restaurant and other things (Restaurant Order Management System). 
+I am in the process of creating and working on the application. Using Avalonia UI. 
+login - Mart password - 1234 and the password is encrypted.
