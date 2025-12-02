@@ -1,5 +1,4 @@
 using Avalonia;
-using System;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
@@ -7,12 +6,7 @@ using OrderWave.Models;
 using OrderWave.Data;
 using System.Collections.ObjectModel;
 using OrderWave.Views;
-using static CommunityToolkit.Mvvm.ComponentModel.__Internals.__TaskExtensions.TaskAwaitableWithoutEndValidation;
-using Microsoft.Data.SqlClient;
-using System.Reflection.PortableExecutable;
-using System.Collections.Generic;
 namespace OrderWave;
-
 public partial class Page1 : UserControl
 {
     private readonly MainWindow _mainWindow;
