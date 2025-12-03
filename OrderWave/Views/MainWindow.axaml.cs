@@ -12,7 +12,7 @@ public partial class MainWindow : Window
         InitializeComponent();
         _mainContentControl = this.FindControl<ContentControl>("MainContentControl");
 
-        NavigateToPage3();
+        NavigateToPage1();
     }
 
 

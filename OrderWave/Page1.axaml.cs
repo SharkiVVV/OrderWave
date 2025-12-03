@@ -2,16 +2,25 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
-using OrderWave.Models;
+using Avalonia.Media;
+using Microsoft.Data.SqlClient;
 using OrderWave.Data;
-using System.Collections.ObjectModel;
+using OrderWave.Models;
 using OrderWave.Views;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Reflection.PortableExecutable;
+//using static CommunityToolkit.Mvvm.ComponentModel.__Internals.__TaskExtensions.TaskAwaitableWithoutEndValidation; i have no idea why this here  
 namespace OrderWave;
+
+
+
 public partial class Page1 : UserControl
 {
     private readonly MainWindow _mainWindow;
 
-    string login = "Mart";
+    string login = "Sharki";
     string password = "1234";
 
     public Page1(MainWindow mainWindow)
@@ -19,7 +28,7 @@ public partial class Page1 : UserControl
         _mainWindow = mainWindow;
         InitializeComponent();
         DataContext = this;
-    }
+    } 
 
 
 
@@ -32,11 +41,16 @@ public partial class Page1 : UserControl
         if (TextBoxLogin == login && TextBoxPassword == password)
         {
             Buttton.IsEnabled = true;
-            
+            TBL.BorderBrush = Brushes.Green;
+
+
         }
         else
         {
             Buttton.IsEnabled = false;
+            TBL.BorderBrush = Brushes. Red;
+
+
         }
 
     }

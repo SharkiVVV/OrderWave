@@ -7,7 +7,7 @@ namespace OrderWave.Data;
 
 public class SqlServerDataService
 {
-    public readonly string _connectionString = "Data Source=DESKTOP-IA8RHKR;Initial Catalog=OrderWave;Integrated Security=True;Encrypt=False";
+    public readonly string _connectionString = "Data Source=SHARKILAPTOP;Initial Catalog=OrderWave;Integrated Security=True;Trust Server Certificate=True";
 
     public List<Waiter> GetWaiters()
     {

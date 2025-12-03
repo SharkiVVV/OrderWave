@@ -7,7 +7,7 @@ using OrderWave.Models;
 using OrderWave.Data;
 using System.Collections.ObjectModel;
 using OrderWave.Views;
-using static CommunityToolkit.Mvvm.ComponentModel.__Internals.__TaskExtensions.TaskAwaitableWithoutEndValidation;
+//using static CommunityToolkit.Mvvm.ComponentModel.__Internals.__TaskExtensions.TaskAwaitableWithoutEndValidation; i have no idea why this here  
 using Microsoft.Data.SqlClient;
 using System.Reflection.PortableExecutable;
 using System.Collections.Generic;
@@ -22,8 +22,8 @@ public partial class Page2 : UserControl
     public ObservableCollection<Customer> Customers { get; }
     public ObservableCollection<Table> Tables { get; }
     public ObservableCollection<Orders> Orders { get; }
-    public readonly string _connectionString = "Data Source=DESKTOP-IA8RHKR;Initial Catalog=OrderWave;Integrated Security=True;Encrypt=False";
-
+    public readonly string _connectionString = "Data Source=SHARKILAPTOP;Initial Catalog=OrderWave;Integrated Security=True;Trust Server Certificate=True";
+    //Data Source = DESKTOP - IA8RHKR; Initial Catalog = OrderWave; Integrated Security = True; Encrypt=False
 
     public Page2(MainWindow mainWindow)
     {

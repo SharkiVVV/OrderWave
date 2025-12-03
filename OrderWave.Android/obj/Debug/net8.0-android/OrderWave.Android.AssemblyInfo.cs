@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrderWave.Android")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fb25cbc8a2339fb3670fb5a7c4c113d67a023d81")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrderWave.Android")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrderWave.Android")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

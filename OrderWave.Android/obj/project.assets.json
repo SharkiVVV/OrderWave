@@ -763,7 +763,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.17": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -2814,7 +2814,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.17": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -4809,7 +4809,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.17": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -6804,7 +6804,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.17": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -8796,7 +8796,7 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.17": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -11206,10 +11206,10 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.8": {
-      "sha512": "P8wR6MUWwYXIjPJuBaZgo5zlI/GWI6QEAo6NyVIbPefa9CCkohYu7dP2rD/mrqnjEqfRHyl+h9VZrDoGpELqYg==",
+    "Microsoft.NET.ILLink.Tasks/8.0.17": {
+      "sha512": "x5/y4l8AtshpBOrCZdlE4txw8K3e3s9meBFeZeR3l8hbbku2V7kK6ojhXvrbjg1rk3G+JqL1BI26gtgc1ZrdUw==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.8",
+      "path": "microsoft.net.illink.tasks/8.0.17",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -11223,7 +11223,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.17.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -13067,7 +13067,7 @@
       "Avalonia.Android >= 11.1.0",
       "Avalonia.Controls.DataGrid >= 11.1.0",
       "Microsoft.Data.SqlClient >= 6.0.1",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.8",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.17",
       "OrderWave >= 1.0.0",
       "Xamarin.AndroidX.Core.SplashScreen >= 1.0.1.1"
     ]
@@ -13120,7 +13120,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0-android34.0": {
@@ -13141,7 +13142,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.8, )",
+            "version": "[8.0.17, )",
             "autoReferenced": true
           },
           "Xamarin.AndroidX.Core.SplashScreen": {
@@ -13160,6 +13161,28 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Android.Ref.34",
+            "version": "[34.0.154, 34.0.154]"
+          },
+          {
+            "name": "Microsoft.Android.Runtime.34.android-arm",
+            "version": "[34.0.154, 34.0.154]"
+          },
+          {
+            "name": "Microsoft.Android.Runtime.34.android-arm64",
+            "version": "[34.0.154, 34.0.154]"
+          },
+          {
+            "name": "Microsoft.Android.Runtime.34.android-x64",
+            "version": "[34.0.154, 34.0.154]"
+          },
+          {
+            "name": "Microsoft.Android.Runtime.34.android-x86",
+            "version": "[34.0.154, 34.0.154]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.Android": {
             "privateAssets": "all"
@@ -13168,7 +13191,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

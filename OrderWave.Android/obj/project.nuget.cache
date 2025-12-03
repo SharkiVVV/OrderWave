@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "I6V/mnaOSrg=",
+  "dgSpecHash": "0li7dZKNuUs=",
   "success": true,
   "projectFilePath": "D:\\Visual studio\\OrderWave\\OrderWave.Android\\OrderWave.Android.csproj",
   "expectedPackageFiles": [
@@ -41,7 +41,7 @@
     "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.5.0\\microsoft.identitymodel.protocols.7.5.0.nupkg.sha512",
     "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.5.0\\microsoft.identitymodel.protocols.openidconnect.7.5.0.nupkg.sha512",
     "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.5.0\\microsoft.identitymodel.tokens.7.5.0.nupkg.sha512",
-    "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.8\\microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+    "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.17\\microsoft.net.illink.tasks.8.0.17.nupkg.sha512",
     "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Sharki\\.nuget\\packages\\skiasharp\\2.88.8\\skiasharp.2.88.8.nupkg.sha512",
     "C:\\Users\\Sharki\\.nuget\\packages\\skiasharp.nativeassets.android\\2.88.8\\skiasharp.nativeassets.android.2.88.8.nupkg.sha512",
@@ -107,7 +107,12 @@
     "C:\\Users\\Sharki\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk7\\1.9.10.2\\xamarin.kotlin.stdlib.jdk7.1.9.10.2.nupkg.sha512",
     "C:\\Users\\Sharki\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.9.10.2\\xamarin.kotlin.stdlib.jdk8.1.9.10.2.nupkg.sha512",
     "C:\\Users\\Sharki\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.7.3.2\\xamarin.kotlinx.coroutines.android.1.7.3.2.nupkg.sha512",
-    "C:\\Users\\Sharki\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.3.2\\xamarin.kotlinx.coroutines.core.jvm.1.7.3.2.nupkg.sha512"
+    "C:\\Users\\Sharki\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.3.2\\xamarin.kotlinx.coroutines.core.jvm.1.7.3.2.nupkg.sha512",
+    "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.android.runtime.34.android-x64\\34.0.154\\microsoft.android.runtime.34.android-x64.34.0.154.nupkg.sha512",
+    "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.android.runtime.34.android-arm64\\34.0.154\\microsoft.android.runtime.34.android-arm64.34.0.154.nupkg.sha512",
+    "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.android.ref.34\\34.0.154\\microsoft.android.ref.34.34.0.154.nupkg.sha512",
+    "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.android.runtime.34.android-arm\\34.0.154\\microsoft.android.runtime.34.android-arm.34.0.154.nupkg.sha512",
+    "C:\\Users\\Sharki\\.nuget\\packages\\microsoft.android.runtime.34.android-x86\\34.0.154\\microsoft.android.runtime.34.android-x86.34.0.154.nupkg.sha512"
   ],
   "logs": []
 }
