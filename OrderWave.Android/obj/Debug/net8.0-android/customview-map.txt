@@ -1,0 +1,10 @@
+color;obj\Debug\net8.0-android\res\drawable\splash_screen.xml
+color;obj\Debug\net8.0-android\res\values\colors.xml
+color;obj\Debug\net8.0-android\res\values-night\colors.xml
+item;obj\Debug\net8.0-android\res\drawable\splash_screen.xml
+item;obj\Debug\net8.0-android\res\values\styles.xml
+layer-list;obj\Debug\net8.0-android\res\drawable\splash_screen.xml
+resources;obj\Debug\net8.0-android\res\values\colors.xml
+resources;obj\Debug\net8.0-android\res\values\styles.xml
+resources;obj\Debug\net8.0-android\res\values-night\colors.xml
+style;obj\Debug\net8.0-android\res\values\styles.xml
