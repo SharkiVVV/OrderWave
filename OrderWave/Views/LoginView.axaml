@@ -1,0 +1,64 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm = "using:OrderWave.ViewModels"
+             xmlns:conv ="using:Avalonia.Data.Converters"
+             x:Class="OrderWave.Views.LoginView"
+             x:DataType="vm:LoginViewModel"
+             Background="#0E1621">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="12" 
+                Width="400">
+        <TextBlock Text="OrderWave" FontSize="20" FontWeight="Bold" Foreground="White"
+                   HorizontalAlignment="Center" Margin="0 0 0 20"/>
+        <TextBox Watermark="Login" Text="{Binding Login}"
+                 Background="RoyalBlue"
+                 BorderThickness="0.6"
+                 BorderBrush="#BCCCFF"
+                 Height="50"/>
+        
+        <TextBox Watermark="Password" 
+                 Text="{Binding Password}"
+                 PasswordChar ="{Binding PasswordChar}"
+                 Background="RoyalBlue"
+                 BorderThickness="0.6"
+                 BorderBrush="#BCCCFF"
+                 Height="50">
+            
+            <TextBox.InnerRightContent>
+                <ToggleButton IsChecked="{Binding IsPasswordVisible}"
+                              Background="Transparent"
+                              Padding="8,0"
+                              Cursor="Hand">
+                    <Panel>
+                        <TextBlock Text="👁" FontSize="16"
+                                   Background="Transparent"
+                                   IsVisible="{Binding !IsPasswordVisible}"/>
+                        <TextBlock Text="👁" FontSize="16"
+                                   Background="Transparent"
+                                   IsVisible="{Binding IsPasswordVisible}"/>
+                    </Panel>
+                
+                </ToggleButton>
+            </TextBox.InnerRightContent>
+        </TextBox>
+       
+        <TextBlock Text="{Binding ErrorMessage}"
+                   Foreground="Firebrick"
+                   TextWrapping="Wrap"
+                   HorizontalAlignment="Center"
+                   IsVisible="{Binding ErrorMessage, Converter={x:Static conv:ObjectConverters.IsNotNull}}"/>
+        <Button    Content="Login"
+                   Command= "{Binding LoginCommand}"
+                   IsEnabled="{Binding !IsBusy}"
+                   Background="RoyalBlue"
+                   HorizontalAlignment="Stretch"
+                   HorizontalContentAlignment = "Center"
+                   Cursor="Hand"
+                   Width="100"
+                   Height="44"/>
+        <TextBlock Text="Login..."
+                   Foreground="Gray"
+                   HorizontalAlignment="Center"
+                   IsVisible="{Binding IsBusy}"/>
+    </StackPanel>
+</UserControl>

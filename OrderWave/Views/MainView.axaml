@@ -1,0 +1,6 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="OrderWave.Views.MainView"
+             Background="#0E1621">
+    <ContentControl Content="{Binding CurrentPage}"/>
+</UserControl>
