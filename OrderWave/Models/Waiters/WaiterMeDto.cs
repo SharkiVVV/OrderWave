@@ -1,4 +1,4 @@
-﻿namespace OrderWave.Models.Tables;
+﻿namespace OrderWave.Models.Waiters;
 
 public class WaiterMeDto
 {

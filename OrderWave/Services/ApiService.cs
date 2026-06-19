@@ -40,6 +40,8 @@ public class ApiService
         _httpClient.DefaultRequestHeaders.Authorization = 
             new AuthenticationHeaderValue("Bearer", token);
     }
+    
+    
 
     public void ClearToken()
     {

@@ -1,4 +1,4 @@
-﻿namespace OrderWave.Models.Tables;
+﻿namespace OrderWave.Models.Guests;
 
 public class CreateGuestRequest
 {
