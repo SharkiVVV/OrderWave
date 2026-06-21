@@ -16,7 +16,7 @@ public class AuthRepository
 
     public Task<ApiResult<LoginResponse>> LoginAsync(string login, string password)
     {
-        var request = new LoginRequest{Login = login, Password = password};
+        var request = new LoginRequest{Login = login.Trim(), Password = password.Trim()};
         return _apiService.PostAsync<LoginResponse>("/api/authorization/login", request);
     }
 
