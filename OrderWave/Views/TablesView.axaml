@@ -1,0 +1,103 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm ="using:OrderWave.ViewModels"
+             xmlns:conv="using:Avalonia.Data.Converters"
+             xmlns:components="using:OrderWave.Views.Components"
+             x:Class="OrderWave.Views.TablesView"
+             x:DataType="vm:TablesViewModel"
+             Background="#0E1621">
+    <Grid>
+        <DockPanel>
+            <Border DockPanel.Dock="Top" Padding="24,16" Background="#0E1621">
+                <Grid>
+                    <TextBlock Text="Hall"
+                               Foreground="White"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               VerticalAlignment="Center"/>
+                    <Button Content="+ Add Table"
+                            Command="{Binding ShowAddTablePanelCommand}"
+                            IsVisible="{Binding IsAdmin}"
+                            Background="RoyalBlue"
+                            Padding="14,8"
+                            HorizontalAlignment="Right"/>
+                </Grid>
+                
+            </Border>
+            
+            <TextBlock DockPanel.Dock="Top"
+                       Text="{Binding ErrorMessage}"
+                       Foreground="OrangeRed"
+                       Margin="24,4"
+                       IsVisible="{Binding ErrorMessage, Converter={x:Static conv:ObjectConverters.IsNotNull}}"/>
+            
+            <TextBlock DockPanel.Dock="Top"
+                       Text="load.'.'."
+                       Foreground="Gray"
+                       Margin="24,4"
+                       IsVisible="{Binding IsBusy}"/>
+            
+            <ScrollViewer>
+                <ItemsControl ItemsSource="{Binding Tables}" Margin="14">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="vm:TableCardViewModel">
+                            <components:TableCardView Margin="10" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </DockPanel>
+        
+<!--         <Grid IsVisible="{Binding IsAddTablePanelVisible}" Background="#80000000"> -->
+<!--             <Border Background="#1B2733" -->
+<!--                     CornerRadius="10" -->
+<!--                     Padding="32" -->
+<!--                     Width="320" -->
+<!--                     HorizontalAlignment="Center" -->
+<!--                     VerticalAlignment="Center"> -->
+<!--                 <StackPanel Spacing="12"> -->
+<!--                     <TextBlock Text="Add table" -->
+<!--                                Foreground="AliceBlue" -->
+<!--                                FontSize="18" -->
+<!--                                FontWeight="Bold"/> -->
+<!--                     <TextBox Text="{Binding NewTableNumber}" -->
+<!--                              Watermark="Table number" -->
+<!--                              Background="RoyalBlue" -->
+<!--                              Foreground="White" -->
+<!--                              BorderBrush="Blue" -->
+<!--                              BorderThickness="1"/> -->
+<!--                     <TextBox Text="{Binding NewTableCapacity}" -->
+<!--                              Watermark="Table capacity" -->
+<!--                              Background="RoyalBlue" -->
+<!--                              Foreground="White" -->
+<!--                              BorderBrush="Blue" -->
+<!--                              BorderThickness="1"/> -->
+<!--                     <TextBlock Text="{Binding ErrorMessage}" -->
+<!--                                Foreground="Red" -->
+<!--                                TextWrapping="Wrap" -->
+<!-- /> -->
+<!--                     <StackPanel Orientation="Horizontal" Spacing="8"> -->
+<!--                         <Button Content="Add" -->
+<!--                                 Command="{Binding ConfirmAddTableCommand}" -->
+<!--                                 IsEnabled="{Binding IsBusy}" -->
+<!--                                 Background="RoyalBlue" -->
+<!--                                 Width="132"/> -->
+<!--                         <Button Content="Cancel" -->
+<!--                                 Command="{Binding CancelAddTablePanelCommand}" -->
+<!--                                 IsEnabled="{Binding IsBusy}" -->
+<!--                                 Background="RoyalBlue" -->
+<!--                                 Width="132"/> -->
+<!--                     </StackPanel> -->
+<!--                 </StackPanel> -->
+<!--                  -->
+<!--             </Border> -->
+<!--          -->
+<!--         </Grid> -->
+    </Grid>
+    
+</UserControl>

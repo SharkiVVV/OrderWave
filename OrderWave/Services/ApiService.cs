@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -35,21 +36,27 @@ public class ApiService
         };
     }
 
-    public void SetToken(string token)
-    {
-        _httpClient.DefaultRequestHeaders.Authorization = 
-            new AuthenticationHeaderValue("Bearer", token);
-    }
-    
-    
+    // public void SetToken(string token)
+    // {
+    //     _httpClient.DefaultRequestHeaders.Authorization = 
+    //         new AuthenticationHeaderValue("Bearer", token);
+    // }
+    //
+    // public void ClearToken()
+    // {
+    //     _httpClient.DefaultRequestHeaders.Authorization = null;
+    // }
 
-    public void ClearToken()
+    private void ApplyCurrentToken()
     {
-        _httpClient.DefaultRequestHeaders.Authorization = null;
+        _httpClient.DefaultRequestHeaders.Authorization = AppSession.Token is not null
+            ? new AuthenticationHeaderValue("Bearer", AppSession.Token) 
+            : null;
     }
 
     public async Task<ApiResult<TResponse>> GetAsync<TResponse>(string url)
     {
+        ApplyCurrentToken();
         try
         {
             var response = await _httpClient.GetAsync(url);
@@ -67,9 +74,11 @@ public class ApiService
 
     public async Task<ApiResult<TResponse>> PostAsync<TResponse>(string url, object body)
     {
+        ApplyCurrentToken();
         try
         {
             var response = await _httpClient.PostAsync(url, BuildJsonContent(body));
+            Console.WriteLine($"[RESPONSE] Status: {(int)response.StatusCode} {response.StatusCode}");
             return await ReadResponseAsync<TResponse>(response);
 
         }
@@ -87,6 +96,7 @@ public class ApiService
 
     public async Task<ApiResult<TResponse>> PatchAsync<TResponse>(string url, object body)
     {
+        ApplyCurrentToken();
         try
         {
             
@@ -110,6 +120,7 @@ public class ApiService
 
     public async Task<ApiResult<bool>> DeleteAsync(string url)
     {
+        ApplyCurrentToken();
         try
         {
             var response = await _httpClient.DeleteAsync(url);
@@ -127,6 +138,7 @@ public class ApiService
     private static StringContent BuildJsonContent(object body)
     {
         var json = JsonSerializer.Serialize(body, JsonOptions);
+        Console.WriteLine($"[Body]: {json}]");
         return new StringContent(json, Encoding.UTF8, "application/json");
     }
 

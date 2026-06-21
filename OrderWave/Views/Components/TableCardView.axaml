@@ -1,0 +1,39 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm ="using:OrderWave.ViewModels"
+             x:Class="OrderWave.Views.Components.TableCardView"
+             x:DataType="vm:TableCardViewModel">
+    
+    <Button Width="252"
+            Height="308"
+            Background="#355683"
+            BorderBrush="{Binding CardBorderBrush}"
+            BorderThickness="4"
+            CornerRadius="10"
+            Padding="0"
+            Cursor="Hand"
+            Command="{Binding SelectCommand}">
+        <Grid RowDefinitions="Auto,*,Auto" Margin="14,12">
+            <TextBlock Grid.Row="0"
+                       Text="{Binding Title}"
+                       Foreground="White"
+                       FontSize="16"
+                       FontWeight="Bold"/>
+            <TextBlock Grid.Row="1"
+                       Text="{Binding TotalText}"
+                       Foreground="White"
+                       FontSize="20"
+                       FontWeight="SemiBold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="2"
+                       Text="{Binding GuestAmount, StringFormat='{}{0} guests'}"
+                       Foreground="LightSlateGray"
+                       FontSize="13"
+                       HorizontalAlignment="Right"
+                       IsVisible="{Binding IsOccupied}"/>
+        </Grid>
+    </Button>
+
+    
+</UserControl>
