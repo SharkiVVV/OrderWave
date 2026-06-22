@@ -10,7 +10,7 @@ public static class  AppSession
     public static int WaiterId { get; set; }
     public static int? ShiftId { get; set; }
 
-    public static bool IsAdmin => Role == "Admib";
+    public static bool IsAdmin => Role == "Admin";
     public static bool IsWaiter => Role == "Waiter";
 
     public static void Clear()
